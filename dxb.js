@@ -19,7 +19,7 @@ app.get('/mywork' , (req , res) => {
 app.get('/contact' , (req , res) => {
     res.sendFile(path.join(__dirname+'/contact.html'))
 })
-app.listen(port || process.env.PORT)
+app.listen(process.env.PORT || port)
 
 
 
