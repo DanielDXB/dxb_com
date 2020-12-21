@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+*
+
+{
+  margin: 0;
+  padding : 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #232427;
+}
+.container
+{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  max-width: 1200px;
+  margin: 40px 0;
+}
+.container .box
+{
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+              inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+              5px 5px 15px rgba(0, 0, 0, 0.3),
+              -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;   
+}
+.container .box .card
+{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .box .card:hover
+{
+  transform: translateY(-50px);
+  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+.container .box .card .content
+{
+padding: 20px;
+text-align: center;
+}
+.container .box .card .content h2
+{
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  transition: 0.5;
+}
+.container .box .card .content a
+{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #000;
+  margin-top: 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  transition: 0.5s;
+  opacity: 0;
+  box-shadow: 0 10px 20px yellow;
+  background: yellow;
+}
+.container .box .card:hover .content a
+{
+  opacity: 1;
+  transition: 1s;
+}
+.navbar .navbarbox
+{
+    position: relative;
+    width: 71vw;
+    height: 130px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+                inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+                5px 5px 15px rgba(0, 0, 0, 0.3),
+                -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin:30px; 
+}
+.navbar .navbarbox .navbarcard
+{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .navbarbox .navbarcard .navbarcontent h1
+{
+  color:rgba(255, 255, 255, 0.5);
+  font-size: 25px;
+  margin: 5px;
+  text-align: center;
+}
+.type
+{
+  color: yellow;
+}
+.footer {
+  width: 100%;
+  background-color: #232427;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 1px;
+}
+.footer h2
+{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
